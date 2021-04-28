@@ -7,3 +7,5 @@ Skill 1 "Ambitious Strike": deals increased damage based on targets health thres
 Skill 2 "Frenzy": deals two strikes at target for GetStrength() * .75 each
 
 Remaining is add an entity to database with the class and input file utilizing it.
+
+input_4.txt is modified to test the Berserker class since it only held a pickpocket testing before.
