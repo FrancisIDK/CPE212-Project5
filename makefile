@@ -35,11 +35,11 @@ endif
 
 
 
-Project04: game.o entityBuilder.o itemBuilder.o encounter.o warrior.o monster.o priest.o rogue.o mage.o entity.o inventory.o item.o
-	$(COMPILER) game.o entity.o encounter.o warrior.o monster.o mage.o rogue.o priest.o entityBuilder.o itemBuilder.o inventory.o item.o -o Project04
+Project04: game.o entityBuilder.o itemBuilder.o encounter.o warrior.o monster.o priest.o rogue.o mage.o berserker.o entity.o inventory.o item.o
+	$(COMPILER) game.o entity.o encounter.o warrior.o monster.o mage.o rogue.o priest.o berserker.o entityBuilder.o itemBuilder.o inventory.o item.o -o Project04
 
 
-game.o: main.cpp entity.hpp warrior.hpp mage.hpp rogue.hpp priest.hpp JsonEntityBuilder.hpp json.hpp
+game.o: main.cpp entity.hpp warrior.hpp mage.hpp rogue.hpp priest.hpp berserker.hpp JsonEntityBuilder.hpp json.hpp
 	$(COMPILER) -c -std=c++11 main.cpp -o game.o
 
 
