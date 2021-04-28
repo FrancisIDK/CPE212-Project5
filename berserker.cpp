@@ -28,8 +28,15 @@ void Berserker::AmbitiousStrike(Entity * target)
 
 void Berserker::Frenzy(Entity * target)
 {
-    Attack(target, GetStrength() * 0.75, "Frenzy");
-    Attack(target, GetStrength() * 0.75, "Frenzy");
+    for(int i = 0; i < 2; i++)
+    {
+        if(target->IsAlive())
+        {
+            Attack(target, GetStrength() * 0.75, "Frenzy");
+        }
+    }
+    // Attack(target, GetStrength() * 0.75, "Frenzy");
+    // Attack(target, GetStrength() * 0.75, "Frenzy");
 }
 
 void Berserker::OutputStatus() const

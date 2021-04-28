@@ -138,7 +138,7 @@
             "class" : "Berserker",
             "strength" : 17,
             "weapon_damage" : 8, 
-            "inventory" : [1, 4]
+            "inventory" : []
         }
     ],
     "items" : 
